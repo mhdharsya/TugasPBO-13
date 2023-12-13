@@ -59,6 +59,7 @@ public class App {
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         } finally {
+            System.out.println("Kasir : " + kasir.getUsernameBenar());
             scanner.close();
         }
     }

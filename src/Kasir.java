@@ -2,20 +2,28 @@ import java.util.Scanner;
 
 public class Kasir {
 
-    public void Login() {
         String Username = "Harsya";
         String Password = "270704";
         String Captcha  = "LvYApR";
         Boolean loginBenar = false;
         Boolean inputcaptchaBenar = false;
         String usernameBenar, passwordBenar,captchaBenar;
+
+        public String getUsernameBenar() {
+            return usernameBenar;
+        }
+
+    public void Login() {
+        System.out.println("SELAMAT DATANG DI INDOMARET");
+        System.out.println("===========================");
+        System.out.println("Log In");
  
         Scanner scanner = new Scanner(System.in); {
 
             while (!loginBenar) {
-                System.out.print("Masukkan username  : ");
+                System.out.print("Username  : ");
                 usernameBenar = scanner.nextLine();
-                System.out.print("Masukkan password  : ");
+                System.out.print("Password  : ");
                 passwordBenar = scanner.nextLine();
 
                 if (usernameBenar.equals(Username) && passwordBenar.equals(Password)) {
@@ -37,7 +45,8 @@ public class Kasir {
                     System.out.println("Captcha Salah!");
                 }
             }  
-        }    
+        }  
+        System.out.println("---------------------------");  
     }  
 }  
 
